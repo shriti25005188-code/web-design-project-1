@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasty Bites Restaurant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #7593b4;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background-color: #182c52;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+      display: inline-block;
+    }
+    nav a:hover {
+      background-color: #142e66;
+    }
+    section {
+      background-color: white;
+      margin: 20px auto;
+      padding: 20px;
+      width: 80%;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #ccc;
+    }
+    h2 {
+      color: #45598f;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #1e6c91;
+      color: white;
+    }
+    form {
+      display: grid;
+      gap: 10px;
+    }
+    input, textarea, select {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background-color: #0d75a5;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+    }
+    input[type="submit"]:hover {
+      background-color: #3c588b;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #304874;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tasty Bites Restaurant</h1>
+    <p>Delicious Food • Cozy Atmosphere • Great Experience</p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#reservation">Reservation</a>
+    <a href="#reviews">Reviews</a>
+  </nav>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <table>
+      <tr>
+        <th>Dish</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Margherita Pizza</td>
+        <td>Classic cheese pizza with tomato sauce</td>
+        <td>₹350</td>
+      </tr>
+      <tr>
+        <td>Pasta Alfredo</td>
+        <td>Creamy white sauce pasta with mushrooms</td>
+        <td>₹420</td>
+      </tr>
+      <tr>
+        <td>Grilled Chicken</td>
+        <td>Juicy chicken with herbs and spices</td>
+        <td>₹480</td>
+      </tr>
+      <tr>
+        <td>Chocolate Brownie</td>
+        <td>Rich chocolate brownie with ice cream</td>
+        <td>₹200</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="reservation">
+    <h2>Online Reservation</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="you@example.com" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" required>
+
+      <label for="guests">Number of Guests:</label>
+      <select id="guests">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5+</option>
+      </select>
+
+      <input type="submit" value="Reserve Table">
+    </form>
+  </section>
+
+  <section id="reviews">
+    <h2>Customer Reviews</h2>
+    <p><strong>Priya Sharma:</strong> “Amazing food and friendly staff. Highly recommended!” ⭐⭐⭐⭐⭐</p>
+    <p><strong>Rahul Mehta:</strong> “Loved the pasta and desserts. Great ambiance!” ⭐⭐⭐⭐☆</p>
+    <p><strong>Ananya Singh:</strong> “Quick service and tasty dishes. Will visit again!” ⭐⭐⭐⭐⭐</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tasty Bites Restaurant | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
